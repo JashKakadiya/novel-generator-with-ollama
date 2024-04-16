@@ -23,11 +23,11 @@ class BaseStructureChain:
 
 class BaseEventChain:
     
-    PROMPT = ''
+    PROMPT = 'hello'
 
     def __init__(self) -> None:
 
-        self.llm = Ollama('llama2') 
+        self.llm = Ollama(model='llama2') 
 
         self.chain = LLMChain.from_string(
             llm=self.llm,
@@ -35,3 +35,4 @@ class BaseEventChain:
         )
 
         self.chain.verbose = True
+        
