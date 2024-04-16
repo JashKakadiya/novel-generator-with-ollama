@@ -27,4 +27,4 @@ class MainCharacterChain:
     def run(self, file_name):
         file_path = os.path.join(os.getcwd(),'docx',file_name)
         resume = extract_text(file_path)
-        return self.chain.run(resume)
+        return self.chain.invoke(resume)
