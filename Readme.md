@@ -1,26 +1,38 @@
-Install Ollama in your respective Os
+# Ollama Test
 
-- https://ollama.com/
+## Installation
 
-Run below command for taking llama2 from ollama
+1. Install Ollama in your respective OS by visiting [ollama.com](https://ollama.com/).
 
-- ollama run llama2
-(contron+z  for exit in prompt)
+2. Run the following command to retrieve llama2 from Ollama:
 
-Clone this repo
+    ```
+    ollama run llama2
+    ```
 
-- git clone https://github.com/JashKakadiya/Ollama_test.git
+    Press `Ctrl + Z` to exit the prompt.
 
-Create virtual Enviroments
-(python 3.10)
+3. Clone this repository:
 
-- python3 -m venv venv 
-- source venv/bin/activate
+    ```
+    git clone https://github.com/JashKakadiya/Ollama_test.git
+    ```
 
-install depedancy
+4. Create a virtual environment (requires Python 3.10):
 
-- pip install langchain python-docx pypdf llama-cpp-python==0.2.61 python-dotenv langchain-community pdfminer-six
+    ```
+    python3 -m venv venv 
+    source venv/bin/activate
+    ```
 
-Run the app
+5. Install dependencies:
 
-- app.py
+    ```
+    pip install langchain python-docx pypdf llama-cpp-python==0.2.61 python-dotenv langchain-community pdfminer-six
+    ```
+
+## Usage
+
+Run the application:
+
+- python app.py
