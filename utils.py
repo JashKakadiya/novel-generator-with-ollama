@@ -27,7 +27,7 @@ class BaseEventChain:
 
     def __init__(self) -> None:
 
-        self.llm = Ollama('llama2:13b') 
+        self.llm = Ollama('llama2') 
 
         self.chain = LLMChain.from_string(
             llm=self.llm,
