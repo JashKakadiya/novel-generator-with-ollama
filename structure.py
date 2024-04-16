@@ -1,5 +1,4 @@
-#from utils import BaseStructureChain, ChatOpenAI
-#from utils import BaseStructureChain, LlamaCpp
+
 from utils import BaseStructureChain, Ollama
 
 
@@ -57,8 +56,6 @@ class PlotChain(BaseStructureChain):
     
     def run(self, subject, genre, author, profile, title):
         features = Ollama().predict(self.HELPER_PROMPT)    
-#        features = LlamaCpp().predict(self.HELPER_PROMPT)
-#        features = ChatOpenAI().predict(self.HELPER_PROMPT)
 
         plot = self.chain.predict(
             features=features,

@@ -22,4 +22,4 @@ class DocWriter:
             text = '\n\n'.join(paragraphs_list)
             self.doc.add_paragraph(text)
 
-        self.doc.save('book.docx')
+        self.doc.save('docx/book.docx')

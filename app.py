@@ -13,7 +13,6 @@ author='William Faulkner'
 genre='Southern Gothic horror'
 
 main_character_chain = MainCharacterChain()
-#profile = main_character_chain.run('Profile.pdf')
 profile = main_character_chain.run('Profile.pdf')
 doc_writer = DocWriter()
 
